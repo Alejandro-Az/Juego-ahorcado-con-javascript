@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ahorcado</title>
+</head>
+<body onload="iniciarJuego()">
+    <div class="contenedor" id="contenedor">
+
+    </div>
+
+    <div class="contenedorInput">
+        <label for="parcial">Una sola letra: </label>
+        <input type="text" name="parcial" id="parcial">
+        <button maxlength="1" onclick="adivinarCaracter()">Adivinar letra</button>
+        <label for="completa">Palabra completa: </label>
+        <input name="completa" type="text" id="completa">
+        <button onclick="adivinarCompleta()">Probar</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
