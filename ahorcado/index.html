@@ -7,17 +7,31 @@
     <title>Ahorcado</title>
 </head>
 <body onload="iniciarJuego()">
+    <h1>Victorias en racha: <span id="victorias">0</span></h1>
+    <div class="ahorcado">
+        <img src="./src/A1.png" alt="" id="a1">
+        <img src="./src/A2.png" alt="" style="display: none;" id="a2">
+        <img src="./src/A3.png" alt="" style="display: none;" id="a3">
+        <img src="./src/A4.png" alt="" style="display: none;" id="a4">
+        <img src="./src/A5.png" alt="" style="display: none;" id="a5">
+        <img src="./src/A6.png" alt="" style="display: none;" id="a6">
+    </div>
+
     <div class="contenedor" id="contenedor">
 
     </div>
 
-    <div class="contenedorInput">
-        <label for="parcial">Una sola letra: </label>
+    <div class="contenedorInput" id="contenedorInput">
+        <label for="parcial">Probar letra: </label>
         <input type="text" name="parcial" id="parcial">
         <button maxlength="1" onclick="adivinarCaracter()">Adivinar letra</button>
         <label for="completa">Palabra completa: </label>
         <input name="completa" type="text" id="completa">
         <button onclick="adivinarCompleta()">Probar</button>
+    </div>
+
+    <div class="contenedorReiniciar" style="display: none;" id="contenedorReiniciar">
+        <button onclick="cambiarImagen(6)">Reintentar</button>
     </div>
 
     <script src="./index.js"></script>
